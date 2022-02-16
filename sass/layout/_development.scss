@@ -1,0 +1,36 @@
+.development {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+.development-list {
+  display: flex;
+  margin-left: -30px;
+}
+.development-title {
+  margin-bottom: 50px;
+}
+.development-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+.dev-item-container {
+  position: relative;
+}
+.dev-text-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+}
+.dev-item-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
