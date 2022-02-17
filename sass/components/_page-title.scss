@@ -1,7 +1,8 @@
-.page-title-style {
-  font-size: 36px;
-  line-height: calc(42 / 36);
+.page-title {
+  @include font(null, 36px, 42px, 0.03em);
+  // font-size: 36px;
+  // line-height: calc(42 / 36);
+  // letter-spacing: 0.03em;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }

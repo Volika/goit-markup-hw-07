@@ -2,12 +2,15 @@
 @import './base/reset';
 @import './base/common';
 @import './utils/hidden';
+@import './utils/placeholder';
+@import './utils/mixins';
 
 @import './components/container';
 @import './components/section';
 @import './components/prim-text';
 @import './components/page-title';
 @import './components/btn';
+@import './components/logo';
 
 @import './layout/header';
 @import './layout/hero';

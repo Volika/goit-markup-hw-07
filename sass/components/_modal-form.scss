@@ -104,8 +104,6 @@
   color: var(--accent-color);
   text-decoration: underline;
 }
-.btn-submit {
-  padding: 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
+.btn--submit {
+  @include indents(10px, 32px, auto, auto);
 }
