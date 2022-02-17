@@ -171,11 +171,11 @@ a {
   display: flex;
 }
 
-.header-item {
+.header-list__item {
   position: relative;
 }
 
-.header-item + .header-item {
+.header-list__item + .header-list__item {
   margin-left: 50px;
 }
 
@@ -899,5 +899,16 @@ a {
   background-color: var(--accent-color);
   border: none;
   fill: #ffffff;
+}
+
+.chek-label-span {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.btn-submit {
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */
