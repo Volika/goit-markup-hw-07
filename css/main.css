@@ -59,7 +59,7 @@ a {
   margin: -1px;
 }
 
-.btn, .header-container, .header-connect__link, .dev-text-container, .cont-link, .client-link, .chek-field {
+.btn, .header-container, .header-connect__link, .dev-text-container, .cont-link, .client-link, .footer-icon-link, .chek-field {
   display: flex;
   align-items: center;
 }
@@ -461,7 +461,7 @@ a {
   flex-grow: 1;
 }
 
-.footer-address {
+.container-address {
   margin-top: 20px;
 }
 
@@ -498,45 +498,42 @@ a {
 }
 
 .footer-cont-text {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14286;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
-.footer-icon-list {
+.footer-icon {
   display: flex;
   justify-content: center;
 }
 
-.footer-icon-item {
+.footer-icon__item {
   width: 44px;
   height: 44px;
 }
 
-.footer-icon-item + .footer-icon-item {
+.footer-icon__item + .footer-icon__item {
   margin-left: 10px;
 }
 
 .footer-icon-link {
-  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
-  align-items: center;
-  justify-content: center;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon-link:hover,
-.footer-icon-link:focus {
+.footer-icon-link:hover, .footer-icon-link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
@@ -553,7 +550,7 @@ a {
   display: inline-flex;
 }
 
-.input-mail-item {
+.form-input__item {
   font-size: 16px;
   height: 50px;
   border-radius: 4px;
@@ -563,20 +560,17 @@ a {
   transition: border-color 500ms;
 }
 
-/* ,  */
-.input-mail-item::placeholder {
+.form-input__item::placeholder {
   color: rgba(255, 255, 255, 0.6);
   transition: color 500ms;
 }
 
-.input-mail-item:hover,
-.input-mail-item:focus {
+.form-input__item:hover, .form-input__item:focus {
   color: #ffffff;
   border: 1px solid #ffffff;
 }
 
-.input-mail-item:hover::placeholder,
-.input-mail-item:focus::placeholder {
+.form-input__item:hover::placeholder, .form-input__item:focus::placeholder {
   color: #ffffff;
 }
 
@@ -596,7 +590,7 @@ a {
   justify-content: center;
 }
 
-.portfolio-item + .portfolio-item {
+.portfolio-list__item + .portfolio-list__item {
   margin-left: 8px;
 }
 
@@ -606,7 +600,7 @@ a {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(26 / 16);
+  line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   border-color: transparent;
@@ -617,8 +611,7 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-btn:hover, .portfolio-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -631,7 +624,7 @@ a {
   flex-wrap: wrap;
 }
 
-.project-item {
+.project-list__item {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
@@ -648,7 +641,7 @@ a {
   top: 0;
   left: 0;
   font-size: 18px;
-  line-height: calc(28 / 18);
+  line-height: 1.55556;
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.8);
@@ -658,19 +651,18 @@ a {
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover .project-item-text,
-.project-link:focus .project-item-text {
-  transform: translateY(0);
-}
-
 .project-link {
   display: block;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover,
-.project-link:focus {
+.project-link:hover, .project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-link:hover .project-item-text,
+.project-link:focus .project-item-text {
+  transform: translateY(0);
 }
 
 .project-card-footer {
@@ -690,8 +682,9 @@ a {
 }
 
 .project-item-development {
+  font-weight: hull;
   font-size: 16px;
-  line-height: calc(30 / 16);
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--prim-text-color);
 }
@@ -746,9 +739,9 @@ a {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
-  text-align: center;
+  line-height: 1.15;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-text-color);
   margin-bottom: 12px;
 }
@@ -760,7 +753,7 @@ a {
 .modal-label {
   display: block;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33333;
   letter-spacing: 0.01em;
   color: var(--prim-text-color);
   margin-bottom: 10px;

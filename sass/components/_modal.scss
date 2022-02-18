@@ -33,11 +33,9 @@
   visibility: hidden;
 }
 .modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
+  @include font(700, 20px, 23px, 0.03em);
+
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 12px;
 }

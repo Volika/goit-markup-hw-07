@@ -71,26 +71,26 @@
           <!-- portfolio nav ------------- -->
 
           <ul class="portfolio-list list">
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <button type="button" class="portfolio-btn">Все</button>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <button type="button" class="portfolio-btn">Веб-сайты</button>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <button type="button" class="portfolio-btn">Приложения</button>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <button type="button" class="portfolio-btn">Дизайн</button>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <button type="button" class="portfolio-btn">Маркетинг</button>
             </li>
           </ul>
 
           <!-- project -->
           <ul class="project-list list">
-            <li class="project-item">
+            <li class="project-list__item">
               <a href="" class="project-link">
                 <div class="project-card-img">
                   <img
@@ -111,7 +111,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-list__item">
               <a href="" class="project-link">
                 <div class="project-card-img">
                   <img
@@ -134,7 +134,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-list__item">
               <a href="" class="project-link">
                 <div class="project-card-img">
                   <img
@@ -157,7 +157,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-list__item">
               <a href="" class="project-link">
                 <div class="project-card-img">
                   <img
@@ -180,7 +180,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-list__item">
               <a href="" class="project-link">
                 <div class="project-card-img">
                   <img
@@ -203,7 +203,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-list__item">
               <a href="" class="project-link">
                 <div class="project-card-img">
                   <img
@@ -226,7 +226,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-list__item">
               <a href="" class="project-link">
                 <div class="project-card-img">
                   <img
@@ -249,7 +249,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-list__item">
               <a href="" class="project-link">
                 <div class="project-card-img">
                   <img
@@ -272,7 +272,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-list__item">
               <a href="" class="project-link">
                 <div class="project-card-img">
                   <img
@@ -304,24 +304,26 @@
           <a href="./index.html" class="logo" lang="en"
             >Web<span class="logo--light">Studio</span>
           </a>
-          <address class="footer-address">
-            <ul class="footer-address-list list">
-              <li class="footer-address-item">
+          <address class="container-address">
+            <ul class="footer-address list">
+              <li class="footer-address__item">
                 <a
                   href="https://goo.gl/maps/Y3qcfdr68zk5Risw8"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="footer-link-address"
+                  class="footer-link footer-link--address"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer-address-item">
-                <a href="mailto:info@example.com" class="footer-link-mail"
+              <li class="footer-address__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-link footer-link--mail"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-address-item">
-                <a href="tel:+380991111111" class="footer-link-tel"
+              <li class="footer-address__item">
+                <a href="tel:+380991111111" class="footer-link footer-link--tel"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -331,29 +333,29 @@
         <div class="container-links">
           <p class="footer-cont-text">Присоединяйтесь</p>
           <!-- links -->
-          <ul class="footer-icon-list list">
-            <li class="footer-icon-item">
+          <ul class="footer-icon list">
+            <li class="footer-icon__item">
               <a href="" class="footer-icon-link">
                 <svg class="footer-icon-icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-icon-item">
+            <li class="footer-icon__item">
               <a href="" class="footer-icon-link">
                 <svg class="footer-icon-icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-icon-item">
+            <li class="footer-icon__item">
               <a href="" class="footer-icon-link">
                 <svg class="footer-icon-icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-icon-item">
+            <li class="footer-icon__item">
               <a href="" class="footer-icon-link">
                 <svg class="footer-icon-icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#linkedin"></use>
@@ -366,10 +368,10 @@
         <div class="container-email">
           <p class="footer-cont-text">Подпишитесь на рассылку</p>
           <form class="form-input">
-            <label for="item-mail"></label>
+            <label for="form-input__label"></label>
             <input
               type="email"
-              class="input-mail-item"
+              class="form-input__item"
               name="item-mail"
               id="item-mail"
               placeholder="E-mail"
