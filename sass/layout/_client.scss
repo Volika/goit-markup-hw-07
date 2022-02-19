@@ -1,21 +1,18 @@
-.client-title {
-  margin-bottom: 50px;
-}
-.client-list {
+.client {
   display: flex;
 }
-.client-list__item {
+.client__item {
   /* width: calc(100% / 6 - 30px); */
   width: 170px;
   height: 92px;
   background: #ffffff;
   /* border-radius: 0px 0px 4px 4px; */
-}
-.client-list__item + .client-list__item {
-  margin-left: 30px;
+  & + & {
+    margin-left: 30px;
+  }
 }
 
-.client-link {
+.client__link {
   @extend %align-list;
 
   justify-content: center;
@@ -34,6 +31,6 @@
   }
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }

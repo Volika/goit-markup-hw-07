@@ -1,22 +1,17 @@
-.development {
+.section--no-padding {
   padding-top: 0;
-  padding-bottom: 94px;
 }
+
 .development-list {
   display: flex;
   margin-left: -30px;
 }
-.development-title {
-  margin-bottom: 50px;
-}
 .development-list__item {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
-}
-.dev-item-container {
   position: relative;
 }
-.dev-text-container {
+.development__box {
   position: absolute;
   @extend %align-list;
   justify-content: center;
@@ -25,7 +20,7 @@
   background: rgba(47, 48, 58, 0.8);
   bottom: 0px;
 }
-.dev-item-text {
+.development__text {
   @include font(700, 14px, 16px, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
